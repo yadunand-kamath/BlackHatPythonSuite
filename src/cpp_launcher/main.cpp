@@ -34,7 +34,7 @@ const std::vector<PythonScript> scripts = {
     {"Mail Phishing", "", "python_scripts/mail_phishing.py"},
     {"Network Scanner", "", "python_scripts/network_scanner.py"},
     {"Packet Sniffer", "", "python_scripts/packet_sniffer.py"},
-    {"Passowrd Hash Cracker", "", "python_scripts/password_hash_cracker.py"},
+    {"Password Hash Cracker", "", "python_scripts/password_hash_cracker.py"},
     {"Password Sniffer", "", "python_scripts/password_sniffer.py"},
     {"Port Scanner", "", "python_scripts/port_scanner.py"},
     {"Vulnerability Scanner", "", "python_scripts/vulnerability_scanner.py"},
@@ -60,16 +60,17 @@ void read()
     switch(choice)
     {
         case 0:
-          std::cout << "Exiting..." << std::endl;
-          break;
+            std::cout << "Exiting..." << std::endl;
+            break;
+        # TODO: Add other options
         default:
-          std::cout << "-xx-Invalid Option-xx-" << std::endl;
+            std::cout << "-xx-Invalid Option-xx-" << std::endl;
     }
 }
 
 int main()
 {
-    console::clear;
+    console::clear();
     menu();
     read();
     return 0;

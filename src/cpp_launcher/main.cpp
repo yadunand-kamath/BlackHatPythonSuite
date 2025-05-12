@@ -44,7 +44,7 @@ const std::vector<PythonScript> scripts = {
 void menu()
 {
     std::cout << "0. Exit\n";
-    for(int i = 0; i < scripts.size; i++)
+    for(int i = 0; i < scripts.size(); i++)
     {
         std::cout << i + 1 <<  ". " << scripts[i].name << " - " << 
           scripts[i].description << std::endl;
@@ -69,6 +69,9 @@ void read()
 
 int main()
 {
-    
+    console::clear;
+    menu();
+    read();
+    return 0;
 }
 

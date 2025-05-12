@@ -4,12 +4,12 @@
 
 ### Added
 
-- `src/cpp_launcher/console.hpp` (PR #2)
+- `src/cpp_launcher/console.hpp` (PR [#2](https://github.com/yadunand-kamath/BlackHatPythonSuite/pull/2))
     - Created `console.hpp` to encapsulate console-related functionalities.
     - Implemented a `clear()` function to clear the console screen, with OS-specific implementations for Windows and Linux.
     - Added an error message and exit code for unsupported operating systems.
     
-- `src/cpp_launcher/main.cpp` (PR #2)
+- `src/cpp_launcher/main.cpp` (PR [#2](https://github.com/yadunand-kamath/BlackHatPythonSuite/pull/2))
     - Created `main.cpp` as the C++ CLI launcher.
     - Included necessary headers such as `<iostream>`, `<string>`, `<vector>`, and `<cstdlib>`.
     - Defined a PythonScript struct to store information about Python scripts (name, description, path).
